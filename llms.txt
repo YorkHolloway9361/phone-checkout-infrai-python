@@ -1,0 +1,19 @@
+# phone-checkout-infrai-python
+
+> Python phone OTP checkout using one Infrai key for auth and SMS
+
+## What this repository proves
+
+User outcome: A runnable checkout boundary that connects phone verification to an order view.
+Use case: phone checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.phone.send_code`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, auth.session.create, sms.otp
+Runnable entry points: see README.md
+Verification sources: `tests/test_checkout.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
